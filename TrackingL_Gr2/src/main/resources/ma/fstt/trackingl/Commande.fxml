@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="primary-background" stylesheets="@styles1.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.controllcommande">
+   <children>
+      <Label layoutX="457.0" layoutY="140.0" text="Categorie">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font></Label>
+      <Label layoutX="207.0" layoutY="140.0" text="Nom client">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font></Label>
+      <TextField fx:id="Etat" layoutX="162.0" layoutY="158.0" promptText="Entrez Le nom Du client" />
+      <TextField fx:id="Nom_Client" layoutX="393.0" layoutY="158.0" promptText="Indiquer la categorie" />
+      <TableView fx:id="mytable" layoutX="128.0" layoutY="232.0" prefHeight="161.0" prefWidth="472.0">
+        <columns>
+          <TableColumn fx:id="col_De" prefWidth="75.0" text="Date_Debut" />
+           <TableColumn fx:id="col_client" prefWidth="75.0" text="Nom client" />
+           <TableColumn fx:id="col_Etat" prefWidth="75.0" text="Categorie" />
+        </columns>
+      </TableView>
+      <Button fx:id="save" layoutX="216.0" layoutY="200.0" mnemonicParsing="false" onAction="#onSaveButtonClick" styleClass="cardbg" text="Save" textFill="#f67f00">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="11.0" />
+         </font></Button>
+      <Button fx:id="modify" layoutX="430.0" layoutY="200.0" mnemonicParsing="false" onAction="#onModifyButtonClick" styleClass="cardbg" text="Modify" textFill="#f67f00">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="11.0" />
+         </font></Button>
+      <Separator layoutX="117.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="3.0" />
+      <VBox layoutX="4.0" prefHeight="400.0" prefWidth="117.0" styleClass="right-bar" stylesheets="@styles1.css">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="108.0" prefWidth="117.0">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/user.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label text="Hello Abdelmajid " textFill="#a7a29d">
+                     <font>
+                        <Font name="Calibri Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Edit Your Commande" textFill="#f67f00">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="11.0" />
+                     </font>
+                  </Label>
+               </children></VBox>
+            <VBox prefHeight="146.0" prefWidth="117.0">
+               <children>
+                  <HBox prefHeight="25.0" prefWidth="117.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/ic_dashb.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Dashbord">
+                           <font>
+                              <Font name="Calibri Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="2.0" top="5.0" />
+                           </HBox.margin></Label>
+                     </children></HBox>
+                  <HBox prefHeight="25.0" prefWidth="117.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/dash.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Finance">
+                           <HBox.margin>
+                              <Insets left="5.0" top="4.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Bold" size="11.0" />
+                           </font></Label>
+                     </children></HBox>
+                  <HBox prefHeight="25.0" prefWidth="117.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/article.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Commande">
+                           <HBox.margin>
+                              <Insets left="3.0" top="3.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Bold" size="11.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <HBox prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/restaurant-17.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Restaurant">
+                           <HBox.margin>
+                              <Insets left="5.0" top="3.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Bold" size="11.0" />
+                           </font></Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="3.0" />
+                     </VBox.margin></HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="52.0" prefWidth="117.0" />
+            <Button fx:id="btn1" mnemonicParsing="false" onAction="#change" prefHeight="25.0" prefWidth="113.0" styleClass="primary-background" stylesheets="@styles1.css" text="Back " textFill="#fdfdfd">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <HBox layoutX="121.0" prefHeight="33.0" prefWidth="480.0" styleClass="top-bar" stylesheets="@styles1.css">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/search-925.png" />
+               </image>
+            </ImageView>
+            <TextField prefHeight="25.0" prefWidth="245.0" promptText="Entrez Nom du Restaurant" styleClass="cardbg">
+               <HBox.margin>
+                  <Insets top="1.0" />
+               </HBox.margin></TextField>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/notification-5.png" />
+               </image>
+            </ImageView>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/user.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label text="Abdelmajid Benjelloun" textFill="#a7a29d">
+                     <font>
+                        <Font name="Calibri Italic" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="6.0" top="6.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" layoutX="123.0" layoutY="33.0" prefHeight="67.0" prefWidth="480.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/download%20(9).jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets top="2.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+
+   </children>
+</AnchorPane>

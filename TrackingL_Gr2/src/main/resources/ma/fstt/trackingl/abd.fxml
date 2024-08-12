@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="355.0" prefWidth="466.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.controllv5">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <AnchorPane minWidth="-Infinity" prefHeight="190.0" prefWidth="430.0" />
+      <Label text="prix_field" />
+      <TextField fx:id="prixField" />
+      <Label text="Categorie" />
+      <TextField fx:id="descriptionField" />
+      <Button fx:id="modify" mnemonicParsing="false" onAction="#onModifyButtonClick" prefHeight="33.0" prefWidth="41.0" text="modify">
+         <font>
+            <Font size="9.0" />
+         </font></Button>
+      <Button fx:id="save" mnemonicParsing="false" onAction="#onSaveButtonClick" text="Save" />
+      <TableView fx:id="mytable" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="col_prix" prefWidth="75.0" text="nom" />
+            <TableColumn fx:id="col_description" prefWidth="75.0" text="categorie" />
+         </columns>
+      </TableView>
+   </children>
+
+
+</VBox>

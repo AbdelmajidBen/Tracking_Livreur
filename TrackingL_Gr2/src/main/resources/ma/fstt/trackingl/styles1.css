@@ -1,0 +1,33 @@
+.primary-background {
+    -fx-background-color: #F67F00;
+}
+
+.secondary-background{
+    -fx-background-color: #FBF9F6;
+}
+.white-background{
+    -fx-border-color: #FFFFFF;
+}
+.transparant{
+    -fx-background-color: rgba(0,0,0,0);
+}
+.right-bar{
+    -fx-background-color: #FFFFFF;
+    -fx-border-style: hidden solid hidden hidden;
+}
+
+.top-bar{
+    -fx-background-color: #FFFFFF;
+    -fx-border-style: hidden hidden  solid hidden;
+}
+.test{
+    -fx-background-color: -fx-control-inner-background;
+}
+.cardbg{
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius: 20;
+}
+.rdbackground
+{
+    -fx-background-color: #FFC500;
+}

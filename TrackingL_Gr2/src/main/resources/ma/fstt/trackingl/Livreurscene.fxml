@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="primary-background" stylesheets="@styles1.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.HelloController">
+   <children>
+      <Label layoutX="168.0" layoutY="167.0" text="Nom du Livreur " textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="416.0" layoutY="166.0" text="Telephone Du Livreur" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="11.0" />
+         </font></Label>
+      <TextField fx:id="nom" layoutX="134.0" layoutY="188.0" promptText="Entrez Le nom ">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="tele" layoutX="398.0" layoutY="188.0" promptText="Entrez Le Numero ">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font></TextField>
+      <Button fx:id="ok" layoutX="202.0" layoutY="221.0" mnemonicParsing="false" onAction="#onSaveButtonClick" styleClass="secondary-background" text="Save " textFill="#f67f00">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="modify" layoutX="315.0" layoutY="221.0" mnemonicParsing="false" onAction="#onModifyButtonClick" styleClass="secondary-background" text="Modify" textFill="#f67f00">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="11.0" />
+         </font></Button>
+      <Button fx:id="save" layoutX="429.0" layoutY="220.0" mnemonicParsing="false" onAction="#onSaveButtonClick" styleClass="secondary-background" text="Valider" textFill="#f67f00">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="11.0" />
+         </font></Button>
+      <TableView fx:id="mytable" layoutX="110.0" layoutY="249.0" prefHeight="144.0" prefWidth="487.0" style="-fx-background-color: #FAA401;">
+        <columns>
+           <TableColumn fx:id="col_id" prefWidth="75.0" text="id_Livreur" />
+           <TableColumn fx:id="col_nom" prefWidth="90.33334350585938" text="nom livreur " />
+           <TableColumn fx:id="col_tele" prefWidth="138.66668701171875" text="telephone du livreur" />
+        </columns>
+      </TableView>
+      <Separator layoutX="104.0" orientation="VERTICAL" prefHeight="402.0" prefWidth="6.0" />
+      <VBox layoutY="-3.0" prefHeight="410.0" prefWidth="106.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="112.0" prefWidth="106.0">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/user.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Hello Abdelmajid " textFill="#a7a29d">
+                     <font>
+                        <Font name="Calibri Italic" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label text="Choose Your delivery person" textFill="#f67f00">
+                     <font>
+                        <Font name="Calibri" size="8.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="122.0" prefWidth="106.0">
+               <children>
+                  <HBox prefHeight="25.0" prefWidth="80.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/ic_dashb.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Dashbord">
+                           <font>
+                              <Font name="Calibri Bold" size="10.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="3.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="25.0" prefWidth="80.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/dash.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Finance">
+                           <font>
+                              <Font name="Calibri Bold" size="10.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="25.0" prefWidth="85.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/article.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="My Orders">
+                           <padding>
+                              <Insets top="3.0" />
+                           </padding>
+                           <font>
+                              <Font name="Calibri Bold" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="25.0" prefWidth="85.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/restaurant-17.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Restaurant ">
+                           <font>
+                              <Font name="Calibri Bold" size="10.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="3.0" top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="84.0" prefWidth="106.0" />
+            <HBox prefHeight="29.0" prefWidth="106.0">
+               <children>
+                  <Button fx:id="btn1" mnemonicParsing="false" onAction="#change" prefHeight="20.0" prefWidth="62.0" styleClass="primary-background" text="Back " textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="10.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="4.0" top="4.0" />
+                     </HBox.margin>
+                  </Button>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/back-121.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="3.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="cardbg" />
+            <String fx:value="right-bar" />
+         </styleClass></VBox>
+      <HBox alignment="CENTER_LEFT" layoutX="106.0" layoutY="-3.0" prefHeight="43.0" prefWidth="504.0" styleClass="top-bar">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/search-925.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField prefHeight="25.0" prefWidth="233.0" promptText="Entrez Nom du Restaurant" styleClass="secondary-background" />
+            <HBox prefHeight="41.0" prefWidth="227.0">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/notification-5.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="2.0" top="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/user.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="4.0" top="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label text="Abdelmajid Benjelloun " textFill="#a7a29d">
+                     <font>
+                        <Font name="Calibri Italic" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="6.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" layoutX="110.0" layoutY="62.0" prefHeight="93.0" prefWidth="495.0" spacing="15.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="93.0" prefWidth="125.0" styleClass="primary-background">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/libv.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Mehdi Kellat" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="11.0" />
+                     </font></Label>
+                  <Label text="+212 678 876 345">
+                     <font>
+                        <Font name="Calibri" size="11.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="125.0" styleClass="primary-background" stylesheets="@styles1.css">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/liv.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Abderahman nej" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="11.0" />
+                     </font></Label>
+                  <Label text="+212 789 098 456">
+                     <font>
+                        <Font name="Calibri" size="11.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="125.0" styleClass="primary-background">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/livreur.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Simo El" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="11.0" />
+                     </font></Label>
+                  <Label text="+212 567 345 128">
+                     <font>
+                        <Font name="Calibri" size="11.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="93.0" prefWidth="125.0" styleClass="primary-background">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/libc.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Zakariya cha" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="11.0" />
+                     </font></Label>
+                  <Label text="+212 678 982 356">
+                     <font>
+                        <Font name="Calibri" size="11.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label layoutX="134.0" layoutY="40.0" text="Les Livreurs Disponibles Aujourd'hui" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="11.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@styles1.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.Controlldash">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="119.0" styleClass="right-bar" stylesheets="@styles1.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="135.0" prefWidth="119.0" style="-fx-background-color: FFFFFF;">
+               <children>
+                  <ImageView fitHeight="51.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/user.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label text="Hello Abdelmajid " textAlignment="CENTER" textFill="#a7a29d">
+                     <font>
+                        <Font name="Arial Italic" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label text="It's 30 min untill lunch !" textFill="#f67f00">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Button minHeight="-Infinity" mnemonicParsing="false" prefHeight="24.0" prefWidth="95.0" styleClass="primary-background" text="Order Now !" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="113.0" prefWidth="119.0" spacing="10.0">
+               <children>
+                  <HBox prefHeight="19.0" prefWidth="119.0">
+                     <children>
+                        <ImageView fitHeight="18.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/ic_dashb.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="4.0" top="3.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Dashbord">
+                           <font>
+                              <Font name="Calibri Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="8.0" top="3.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="11.0" prefWidth="119.0">
+                     <children>
+                        <ImageView fitHeight="12.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/dash.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="6.0" top="4.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Finance" textFill="#a7a29d">
+                           <font>
+                              <Font name="Calibri Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="12.0" top="3.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="18.0" prefWidth="119.0">
+                     <children>
+                        <ImageView fitHeight="17.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/article.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="3.0" top="2.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="My orders" textFill="#a7a29d">
+                           <HBox.margin>
+                              <Insets left="8.0" top="3.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="19.0" prefWidth="119.0">
+                     <children>
+                        <ImageView fitHeight="15.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/restaurant-17.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="4.0" top="3.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Restaurant" textFill="#a7a29d">
+                           <HBox.margin>
+                              <Insets left="7.0" top="3.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="120.0" prefWidth="117.0" style="-fx-background-color: FFFFFF;" stylesheets="@styles1.css">
+               <children>
+                  <Button fx:id="btnliv" layoutY="2.0" mnemonicParsing="false" onAction="#change" prefHeight="25.0" prefWidth="115.0" styleClass="primary-background" text="Livreur" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="1.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets left="31.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="btncom" layoutY="33.0" mnemonicParsing="false" onAction="#change1" prefHeight="26.0" prefWidth="114.0" styleClass="primary-background" text="Commande" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnprod" layoutY="65.0" mnemonicParsing="false" onAction="#change2" prefHeight="26.0" prefWidth="113.0" styleClass="primary-background" text="Produits" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <HBox prefHeight="30.0" prefWidth="117.0">
+               <children>
+                  <ImageView fitHeight="17.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/logout-15.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="6.0" top="3.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label text="Log-Out!" textFill="#a7a29d">
+                     <font>
+                        <Font name="Calibri Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" top="3.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="secondary-background" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="486.0" style="-fx-background-color: FFFFFF;" styleClass="top-bar" stylesheets="@styles1.css">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/search-925.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField prefHeight="25.0" prefWidth="194.0" promptText="Search for a food or a resturant ?" styleClass="test" stylesheets="@styles1.css" />
+                  <Pane prefHeight="35.0" prefWidth="81.0" />
+                  <Pane prefHeight="35.0" prefWidth="148.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="4.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/notification-5.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="24.0" fitWidth="25.0" layoutX="35.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/user.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="59.0" layoutY="10.0" text="Abdelmajid Benjelloun" textFill="#a7a29d">
+                           <font>
+                              <Font name="Times New Roman" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <VBox styleClass="cardbg" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="194.0" text="What would you eat Today ?">
+                           <font>
+                              <Font name="Calibri" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="30.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <HBox prefHeight="245.0" prefWidth="481.0">
+                     <children>
+                        <VBox prefHeight="204.0" prefWidth="381.0" styleClass="cardbg">
+                           <children>
+                              <HBox minHeight="-Infinity" prefHeight="94.0" prefWidth="402.0" spacing="10.0">
+                                 <children>
+                                    <VBox prefHeight="150.0" prefWidth="102.0" styleClass="cardbg" stylesheets="@styles1.css">
+                                       <children>
+                                          <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/images.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Chiken">
+                                             <font>
+                                                <Font name="Calibri Bold" size="11.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="100 Restaurant" textFill="#a7a29d">
+                                             <font>
+                                                <Font name="Calibri" size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="150.0" prefWidth="110.0" styleClass="cardbg">
+                                       <children>
+                                          <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/pizza-22.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Pizza And Pasta">
+                                             <font>
+                                                <Font name="Calibri Bold" size="11.0" />
+                                             </font></Label>
+                                          <Label text="130Restaurants" textFill="#a7a29d">
+                                             <font>
+                                                <Font name="Calibri" size="10.0" />
+                                             </font></Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="91.0" prefWidth="96.0" styleClass="cardbg">
+                                       <children>
+                                          <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/hamburger-70.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Hamburger">
+                                             <font>
+                                                <Font name="Calibri Bold" size="11.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="70 Restaurants" textFill="#a7a29d">
+                                             <font>
+                                                <Font name="Calibri" size="10.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="150.0" prefWidth="102.0" styleClass="cardbg">
+                                       <children>
+                                          <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/rice-17.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Chiness Food">
+                                             <font>
+                                                <Font name="Calibri Bold" size="11.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Few Restaurants" textFill="#a7a29d">
+                                             <font>
+                                                <Font name="Calibri" size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children></VBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="96.0" prefWidth="184.0" styleClass="primary-background">
+                                       <HBox.margin>
+                                          <Insets left="3.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="186.0" text="Today's Best Deals !" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="Calibri" size="20.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="12.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets bottom="26.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Button mnemonicParsing="false" styleClass="primary-background" text="Show Deals" textFill="WHITE">
+                                             <font>
+                                                <Font name="Calibri" size="13.0" />
+                                             </font></Button>
+                                       </children>
+                                    </VBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0" stylesheets="@styles1.css">
+                                       <children>
+                                          <VBox prefHeight="96.0" prefWidth="86.0" styleClass="cardbg">
+                                             <children>
+                                                <Label text="Expenses">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="12.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="9.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="54.0" prefWidth="86.0" text="100 $" textFill="#f67f00">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="26.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="12.0" prefWidth="97.0" text="This month ">
+                                                   <font>
+                                                      <Font name="Calibri Italic" size="9.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="cardbg">
+                                             <children>
+                                                <Label alignment="CENTER" text="View More" textFill="#f67f00">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="10.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="9.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="88.0" styleClass="cardbg" text="30 $" textFill="#f67700">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="30.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Dept">
+                                                   <font>
+                                                      <Font name="Calibri Italic" size="10.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <Label alignment="CENTER" prefHeight="13.0" prefWidth="201.0" text="Your Favourite Restaurant">
+                                 <font>
+                                    <Font name="Calibri" size="11.0" />
+                                 </font>
+                              </Label>
+                              <HBox prefHeight="94.0" prefWidth="379.0" spacing="20.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="94.0" prefWidth="133.0">
+                                       <children>
+                                          <ImageView fitHeight="63.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/images.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Mc Donald " />
+                                          <Label text="www.mcdonald.ma" textFill="#a7a29d" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="94.0" prefWidth="139.0">
+                                       <children>
+                                          <ImageView fitHeight="72.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/download.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="KFC" />
+                                          <Label text="www.kfc.ma" textFill="#a7a29d" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="94.0" prefWidth="140.0">
+                                       <children>
+                                          <ImageView fitHeight="62.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/taco.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Tacos De Lyon" />
+                                          <Label text="www.tacosdelyon.ma" textFill="#a7a29d">
+                                             <font>
+                                                <Font name="Calibri" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox minHeight="-Infinity" prefHeight="319.0" prefWidth="93.0" spacing="10.0" styleClass="cardbg" stylesheets="@styles1.css">
+                           <children>
+                              <Label text="Expenses History">
+                                 <font>
+                                    <Font name="Calibri Bold" size="11.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="3.0" top="8.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Pane prefHeight="12.0" prefWidth="107.0" />
+                              <HBox prefHeight="34.0" prefWidth="81.0">
+                                 <children>
+                                    <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/user-299.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="2.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label text="Khalid el" textFill="#a7a29d">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="4.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Pane prefHeight="18.0" prefWidth="10.0" />
+                                    <Label text="25$" textFill="#a7a29d">
+                                       <HBox.margin>
+                                          <Insets top="5.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="30.0" prefWidth="92.0">
+                                 <children>
+                                    <ImageView fitHeight="21.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/user-196.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="3.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label text="Mjido" textFill="#a7a29d">
+                                       <font>
+                                          <Font name="Calibri" size="10.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="6.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Pane prefHeight="18.0" prefWidth="8.0" />
+                                    <Label text="45$" textFill="#a7a29d">
+                                       <font>
+                                          <Font name="Calibri" size="10.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="13.0" top="6.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="38.0" prefWidth="41.0">
+                                 <children>
+                                    <ImageView fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/user-451.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Mehdi K" textFill="#a7a29d">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="2.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Pane prefHeight="38.0" prefWidth="4.0" />
+                                    <Label text="35$" textFill="#a7a29d">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Pane prefHeight="54.0" prefWidth="92.0" />
+                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" styleClass="primary-background" stylesheets="@styles1.css" text="More" textFill="WHITE" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
